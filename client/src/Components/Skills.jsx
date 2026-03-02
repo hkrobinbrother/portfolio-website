@@ -21,11 +21,10 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="relative min-h-screen bg-gray-900 text-white px-6 py-16 flex flex-col items-center overflow-hidden"
+      className="relative min-h-screen  text-white px-6 py-16 flex flex-col items-center overflow-hidden"
     >
       {/* Background Gradient Blur */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-transparent to-purple-600/20 blur-3xl"></div>
-
+      
       <h2 className="relative text-4xl md:text-5xl font-bold mb-12 text-center z-10 text-white-400to-purple-500 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
         My Skills
       </h2>

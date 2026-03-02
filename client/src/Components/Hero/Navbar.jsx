@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full z-50">
       {/* Navbar container */}
-      <div className="container mx-auto px-6 py-4 flex justify-between items-center relative bg-black/70 backdrop-blur-md">
+      <div className="container mx-auto px-6 py-4 flex justify-between items-center relative shadow backdrop-blur-md">
         {/* Logo */}
         <a
           href="#home"
