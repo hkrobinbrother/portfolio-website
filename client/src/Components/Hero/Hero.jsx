@@ -43,11 +43,11 @@ const Hero = () => {
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4">
             <button className="px-8 py-3 bg-blue-600 hover:bg-blue-700 transition duration-300 rounded-xl font-semibold shadow-lg hover:shadow-blue-500/50">
-              View Projects
+              <a href="#projects">View Projects</a>
             </button>
 
             <button className="px-8 py-3 border border-gray-600 hover:border-blue-500 transition duration-300 rounded-xl font-semibold">
-              Contact Me
+              <a href="#contact">Contact Me</a>
             </button>
           </div>
 

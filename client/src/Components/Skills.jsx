@@ -25,7 +25,7 @@ const Skills = () => {
     >
       {/* Background Gradient Blur */}
       
-      <h2 className="relative text-4xl md:text-5xl font-bold mb-12 text-center z-10 text-white-400to-purple-500 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+      <h2 className="relative text-4xl md:text-7xl font-bold mb-12 text-center z-10 text-white-400to-purple-500 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
         My Skills
       </h2>
 
