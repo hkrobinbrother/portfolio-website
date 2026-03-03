@@ -40,17 +40,29 @@ const Hero = () => {
             Passionate about creating full-stack projects that are scalable and user-friendly.
           </p>
 
-          {/* Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4">
-            <button className="px-8 py-3 bg-blue-600 hover:bg-blue-700 transition duration-300 rounded-xl font-semibold shadow-lg hover:shadow-blue-500/50">
-              <a href="#projects">View Projects</a>
-            </button>
+         {/* Buttons */}
+<div className="flex flex-col sm:flex-row gap-4">
 
-            <button className="px-8 py-3 border border-gray-600 hover:border-blue-500 transition duration-300 rounded-xl font-semibold">
-              <a href="#contact">Contact Me</a>
-            </button>
-          </div>
+  <a
+    href="#projects"
+    className="px-8 py-3 bg-blue-600 hover:bg-blue-700 transition duration-300 rounded-xl font-semibold shadow-lg hover:shadow-blue-500/50 text-center"
+  >
+    View Projects
+  </a>
 
+ 
+
+  {/* Resume Button */}
+  <a
+    href="/resume.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="px-8 py-3 border-2 border-blue-600 hover:bg-blue-600 hover:opacity-90 transition duration-300 rounded-xl font-semibold text-center shadow-lg hover:shadow-purple-500/40"
+  >
+    View Resume
+  </a>
+
+</div>
           
           
         </div>
