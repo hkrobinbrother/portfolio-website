@@ -1,17 +1,14 @@
 import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { BsMouseFill } from "react-icons/bs";
+import { Link } from "react-router";
+
+
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
-  const links = [
-    { name: "Home", link: "#home" },
-    { name: "About", link: "#about" },
-    { name: "Skills", link: "#skills" },
-    { name: "Projects", link: "#projects" },
-    { name: "Contact", link: "#contact" },
-  ];
+ 
 
   const toggleMenu = () => setOpen(!open);
 
@@ -20,12 +17,12 @@ const Navbar = () => {
       {/* Navbar container */}
       <div className="container mx-auto px-6 py-4 flex justify-between items-center relative shadow backdrop-blur-md">
         {/* Logo */}
-        <a
-          href="#home"
+        <Link
+          to="/"
           className="text-2xl font-bold bg-gradient-to-r flex items-center from-blue-400 to-purple-500 bg-clip-text text-transparent"
         >
           <BsMouseFill className="mr-2 text-amber-300" /> Hk Robin
-        </a>
+        </Link>
 
         {/* Menu Button (always visible) */}
         {!open && (
@@ -55,16 +52,22 @@ const Navbar = () => {
         </button>
 
         {/* Menu Links */}
-        {links.map((item, index) => (
-          <a
-            key={index}
-            href={item.link}
-            onClick={toggleMenu} // click → close menu
-            className="text-4xl md:text-5xl font-bold hover:text-blue-400 transition "
+      <div className="flex flex-col space-y-2 text-5xl" >
+          <Link
+            to="/"
+            onClick={()=>setOpen(false)}
+            className="text-6xl font-bold hover:text-blue-400 transition duration-300"
           >
-            {item.name}
-          </a>
-        ))}
+            Home
+          </Link>
+          <Link 
+            to="/about"
+            onClick={()=>setOpen(false)}
+            className="text-6xl font-bold hover:text-blue-400 transition duration-300"
+          >
+            About
+          </Link>
+        </div>
       </div>
     </nav>
   );
