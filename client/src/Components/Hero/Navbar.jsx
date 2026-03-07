@@ -67,6 +67,31 @@ const Navbar = () => {
           >
             About
           </Link>
+        
+          <Link 
+            to="/projects"
+            onClick={()=>setOpen(false)}
+            className="text-6xl font-bold hover:text-blue-400 transition duration-300"
+          >
+            Projects
+          </Link>
+          <Link 
+            to="/blogs"
+            onClick={()=>setOpen(false)}
+            className="text-6xl font-bold hover:text-blue-400 transition duration-300"
+          >
+            Blogs
+          </Link>
+       
+          <Link 
+            to="/contact"
+            onClick={()=>setOpen(false)}
+            className="text-6xl font-bold hover:text-blue-400 transition duration-300"
+          >
+            Contact
+          </Link>
+
+
         </div>
       </div>
     </nav>
