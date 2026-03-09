@@ -52,7 +52,7 @@ const Navbar = () => {
         </button>
 
         {/* Menu Links */}
-      <div className="flex flex-col space-y-2 text-5xl" >
+      <div className="flex flex-col space-y-4 text-5xl uppercase font-['Lato'] " >
           <Link
             to="/"
             onClick={()=>setOpen(false)}
@@ -89,6 +89,14 @@ const Navbar = () => {
             className="text-6xl font-bold hover:text-blue-400 transition duration-300"
           >
             Contact
+          </Link>
+       
+          <Link 
+            to="/login"
+            onClick={()=>setOpen(false)}
+            className="text-6xl font-bold hover:text-blue-400 transition duration-300"
+          >
+            Login
           </Link>
 
 

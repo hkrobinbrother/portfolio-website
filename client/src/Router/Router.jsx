@@ -6,6 +6,7 @@ import Home from "../Components/Home/Home";
 import Projects from "../Pages/Projects";
 import Blogs from "../Pages/Blogs";
 import Contact from "../Pages/Contact";
+import Login from "../Pages/Login";
 
 
 
@@ -36,4 +37,8 @@ export const router = createBrowserRouter([
         },
     ]
   },
+  {
+    path: "login",
+    element: <Login />
+  }
 ]);
