@@ -7,6 +7,7 @@ import img3 from "../assets/free-food.png";
 import img4 from "../assets/nest-mart.png";
 import img5 from "../assets/cafe-ali.png";
 import img6 from "../assets/asfc.png";
+import Footer from "../Components/Footer";
 
 const Projects = () => {
   const projects = [
@@ -74,6 +75,7 @@ const Projects = () => {
   ];
 
   return (
+    <>
     <section
       id="projects"
       className="min-h-screen text-white px-6 py-16"
@@ -141,6 +143,8 @@ const Projects = () => {
 
       </div>
     </section>
+    <Footer />
+    </>
   );
 };
 

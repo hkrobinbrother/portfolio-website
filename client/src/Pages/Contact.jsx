@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import Footer from "../Components/Footer";
 
 export default function Contact() {
   const {
@@ -9,13 +10,31 @@ export default function Contact() {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
-    console.log(data);
-    alert("Message Sent Successfully 🚀");
-    reset();
-  };
+  const onSubmit = async (data) => {
+  try {
+    const res = await fetch(`${import.meta.env.Base_url}/send-email`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+
+    const result = await res.json();
+
+    if (res.ok) {
+      alert("Message Sent Successfully 🚀");
+      reset();
+    } else {
+      alert("Failed to send message");
+    }
+  } catch (error) {
+    console.error(error);
+  }
+};
 
   return (
+    <>
     <section id="contact" className="min-h-screen text-white px-6 py-20">
       
       {/* Title */}
@@ -83,5 +102,7 @@ export default function Contact() {
 
       </div>
     </section>
+    <Footer />
+    </>
   );
 }

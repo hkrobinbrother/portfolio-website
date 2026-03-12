@@ -3,6 +3,7 @@ import React from "react";
 import blog1 from "../assets/blog.jpg";
 import blog2 from "../assets/blog.jpg";
 import blog3 from "../assets/blog.jpg";
+import Footer from "../Components/Footer";
 
 export default function Blogs() {
   const blogs = [
@@ -36,6 +37,7 @@ export default function Blogs() {
   ];
 
   return (
+    <>
     <section id="blogs" className="min-h-screen text-white px-6 py-20">
       
       {/* Title */}
@@ -84,5 +86,7 @@ export default function Blogs() {
 
       </div>
     </section>
+    <Footer />
+    </>
   );
 }
