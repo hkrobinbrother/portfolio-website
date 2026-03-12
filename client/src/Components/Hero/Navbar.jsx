@@ -46,7 +46,7 @@ const Navbar = () => {
         {/* Close Button */}
         <button
           onClick={toggleMenu}
-          className="absolute top-6 right-6 text-4xl text-white z-50 focus:outline-none cursor-pointer"
+          className="absolute top-4 right-23 text-4xl text-white z-50 focus:outline-none cursor-pointer"
         >
           <FiX />
         </button>
