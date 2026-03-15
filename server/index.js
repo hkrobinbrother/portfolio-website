@@ -40,6 +40,8 @@ app.post("/send-email", async (req, res) => {
 });
 
 
+
+
 // Root route (check route)
 app.get("/", (req, res) => {
   res.send("🚀 Server is running");
