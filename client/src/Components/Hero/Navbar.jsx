@@ -98,6 +98,13 @@ const Navbar = () => {
           >
             Login
           </Link>
+          <Link 
+            to="/dashboard"
+            onClick={()=>setOpen(false)}
+            className="text-6xl font-bold hover:text-blue-400 transition duration-300"
+          >
+            Dashboard
+          </Link>
 
 
         </div>
